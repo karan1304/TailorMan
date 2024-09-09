@@ -1,0 +1,210 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.heroContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../assets/images/HeroBackground.jpg');
+
+    .leftSide
+    {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .heroData
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:20px 40px;
+            gap:30px;
+            .brandName
+            {
+                font-size: 96px;
+                font-weight: 400;
+                color:#1E3D59;
+                line-height: 95px;
+            }
+            .brandDescription
+            {
+                font-family: 'Merriweather',serif;
+                text-align: center;
+                font-size:20px;
+                width: 546px;
+            }
+            .socialMediaButtonsContainer
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.25);
+                padding:10px 20px;
+                border-radius:10px;
+                gap:30px;
+                a
+                {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+        // flex-direction: column;
+    }
+    .rightSide
+    {
+        width: 50%;
+        img
+        {
+            width: 530px;
+            height: 530px;
+            object-fit: contain;
+            margin-top:10px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1200px)
+{
+       
+    .heroContainer
+    {
+        
+        .leftSide
+        {
+            .heroData
+            {
+                padding:20px 20px;
+                width: 100%;
+                .brandName
+                {
+                    font-size: 64px;
+                    line-height: 80px;
+                }
+                .brandDescription
+                {
+                    width: 100%;
+                    font-size:18px;
+                    text-align: center;
+                }
+                .socialMediaButtonsContainer
+                {
+                    width: 350px;
+                    a
+                    {
+                        width:35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        
+        .rightSide
+        {
+    
+
+            img
+            {
+                width: 700px;
+                height: 450px;
+                // height: 100%;
+                // object-fit:cover;
+                
+            }
+        }
+    }    
+
+}
+
+@media screen  and (max-width: 767px){
+    .heroContainer
+    {
+        flex-direction: column;
+        .leftSide,.rightSide
+        {
+            width: 100%;
+        }
+        .leftSide
+        {
+            .heroData
+            {
+                gap:25px;
+                .brandName
+                {
+                    line-height: 60px;
+                }
+            }
+        }
+       
+    }
+    
+}
+
+@media screen and (max-width:370px)
+{
+    .heroContainer
+    {
+        .leftSide
+        {
+            .heroData
+            {
+                gap:20px;
+                .brandName
+                {
+                    font-size: 48px;
+                    line-height: 50px;
+                }
+                .brandDescription
+                {
+                    font-size:16px;
+                }
+                .socialMediaButtonsContainer
+                {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    .heroContainer
+    {
+        .leftSide
+        {
+            .heroData
+            {
+                .brandName
+                {
+                    font-size:36px;
+                    line-height: 35px;
+                }
+                .brandDescription
+                {
+                    font-size:14px;
+                }
+                .socialMediaButtonsContainer
+                {
+                    width: 270px;
+                    a
+                    {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+    

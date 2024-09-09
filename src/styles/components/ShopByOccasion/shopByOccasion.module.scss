@@ -1,0 +1,70 @@
+.heading
+    {
+        margin-top:50px;
+        font-size: 24px;
+        font-family: 'Merriweather',serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.heading::after,
+        &.heading::before
+        {
+            content: "";
+            flex:0.47;
+            // width: 38%;
+            border-bottom: 1px solid #000; /* You can adjust the color and thickness */
+            margin: 0 10px; 
+        }
+    }
+.cardContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:40px 0px;
+    gap:40px;
+}
+
+
+@media screen and (max-width:800px)
+{
+    .heading
+    {
+        font-size:18px;
+        &.heading::after,
+        &.heading::before
+        {
+            content: "";
+            flex:0.47;
+        }
+    }
+}
+
+@media screen and (max-width:475px)
+{
+    .heading
+    {
+        font-size:16px;
+        &.heading::after,
+        &.heading::before
+        {
+            content: "";
+            flex:0.47;
+        }
+    }
+}
+
+@media screen and (max-width:330px)
+{
+    .heading
+    {
+        font-size:14px;
+        &.heading::after,
+        &.heading::before
+        {
+            content: "";
+            flex:0.5;
+        }
+    }
+}

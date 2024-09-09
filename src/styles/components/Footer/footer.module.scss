@@ -1,0 +1,96 @@
+.footer
+{
+    background-color:#1E3D59;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    gap:60px;
+    padding:50px 0;
+    .col1
+    {
+
+        .listHeading
+        {
+            margin-bottom:20px;
+            font-size:24px;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Merriweather',serif;
+            color:#eeeeee;
+
+        }
+        ul
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:20px;
+        }
+        .office,.phone,.mail
+        {
+            width: 320px;;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap:20px;
+            font-size:16px;
+            font-weight: 300;
+            font-family: 'Merriweather',serif;
+            color:#cccccc;
+            img
+            {
+                width:30px;
+                height: 30px;
+            }
+        }
+
+    }
+
+    .col2, .col3, .col4, .col5
+    {
+        .listHeading
+        {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Merriweather',serif;
+            color:#eeeeee;
+            margin-bottom: 20px;
+        }
+
+        ul
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:20px;
+        }
+        .link
+        {
+            color:#cccccc;
+            font-size:16px;
+            font-weight: 300;
+            font-family: 'Merriweather',serif;
+        }
+    }
+    .col5
+    {
+     .sl
+     {
+        width:30px;
+        height: 30px;
+     }
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    .footer
+    {
+        padding:50px 40px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}

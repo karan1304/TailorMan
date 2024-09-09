@@ -1,0 +1,54 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.card
+{
+    width: 300px;
+    height: 380px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid rgba(0,0,0,0.5);
+    img
+    {
+        width: 299px;
+        height: 316px;
+        object-fit:cover;
+        background:url('./../../../assets/images/cardbackground.jpg');
+        background-size:cover;
+    }
+    .cardData
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .heading
+        {
+            font-weight: 500;
+            color:#333333 80%;
+            opacity: 0.8;
+        }
+        .price
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            .discountedPrice
+            {
+                color: #333333;
+            }
+            .actualPrice
+            {
+                text-decoration: line-through;
+            }
+        }
+        // padding:20px 0px;
+    }
+}

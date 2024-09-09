@@ -1,0 +1,162 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: "Bodoni Moda SC", serif;
+}
+
+.topbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 50px;
+    border-bottom:2px solid #cccccc;
+    .logoContainer
+    {
+        .logo
+        {
+            font-family: "Bodoni Moda SC", serif;
+            font-size: 40px;
+            font-weight: 500;
+            color:#1E3D59;
+        }
+    }
+
+    .navigation
+    {
+        .navigationContainer
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            cursor: pointer;
+            .link
+            {
+                font-family: "Merriweather", serif;
+                font-size:16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .buttonContainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        .btns
+        {
+           padding:5px 15px;
+           color:#1E3D59;
+           font-weight: 500;
+           border:1px solid #1E3D59;
+           border-radius:10px;
+        }
+    }
+
+    .toggle
+    {
+        img
+        {
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .topbar
+    {
+        padding:10px 20px;
+    }
+}
+
+@media screen and (max-width: 950px) 
+{
+    
+        .mobileVersion
+        {
+            border-bottom: 2px solid #cccccc;
+            transform: all 0.5s ease-in-out;
+           
+            .navigation
+            {
+                .navigationContainer
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap:10px;
+                    padding:20px 0;
+                    .link
+                    {
+                        font-family: 'Merriweather';
+                        font-size:20px;
+                    }
+                }
+            }
+
+            .buttonContainer
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+                padding-bottom: 20px;
+                .btns
+                {
+                padding:5px 15px;
+                color:#1E3D59;
+                font-weight: 500;
+                border:1px solid #1E3D59;
+                border-radius:10px;
+                
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 450px) {
+    .topbar {
+        .toggle
+        {
+            img
+            {
+                width:30px;
+                height: 30px;
+            }
+        }
+
+    .logoContainer
+    {
+        .logo
+        {
+            font-size: 30px;
+        }
+    }
+            }
+            .mobileVersion
+            {
+                .navigation
+                {
+                    .navigationContainer
+                    {
+                        .link
+                        {
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+    
+}
+
+
+
